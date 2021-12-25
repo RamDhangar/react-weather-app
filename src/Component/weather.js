@@ -39,11 +39,12 @@ fetchfun(e){
       
   console.log((this.state.timeZone).toLocaleString())     }
            else {
-            this.setState({
+            this.setState({  
+              e.target.value="";
               displayCity:"City not found",
               temp:"",
-              long:"0",
-            lat:"0",
+              long:"",
+            lat:"",
             country:"IN",
             timeZone:"0",humidity:"0",pressure:"0",wind:"0",weather:"0"
               
